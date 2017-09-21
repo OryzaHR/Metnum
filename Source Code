@@ -1,0 +1,141 @@
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+using namespace std;
+
+
+
+
+
+/********Fungsi Penjumlahan********/
+penjumlahan()
+{
+float bil1,bil2,hasil;
+cout<<" -ORYZA HABIBIE RAHMAN-"<<endl;
+cout<<" OPERASI PENJUMLAHAN"<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Input Bilangan A : ";cin>>bil1;
+cout<<" Input Bilangan B : ";cin>>bil2;
+
+hasil=bil1+bil2;
+
+cout<<" Hasil Penjumlahan adalah : "<<hasil<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Terima Kasih"<<endl;
+}
+
+
+/********Fungsi Pengurangan********/
+pengurangan()
+{
+float bil1,bil2,hasil;
+cout<<" -ORYZA HABIBIE RAHMAN-"<<endl;
+cout<<" OPERASI PENGURANGAN"<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Input Bilangan A : ";cin>>bil1;
+cout<<" Input Bilangan B : ";cin>>bil2;
+
+hasil=bil1-bil2;
+
+cout<<" Hasil Pengurangan adalah : "<<hasil<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Terima Kasih"<<endl;
+}
+
+
+/********Fungsi fungsi********/
+fungsi()
+{
+float bil1,bil2,hasil;
+cout<<" -ORYZA HABIBIE RAHMAN-"<<endl;
+cout<<" OPERASI FUNGSI"<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Input Nilai x : ";cin>>bil1;
+
+hasil=2*bil1*bil1-4*bil1+1;
+
+cout<<" Hasil fungsi F(x)=2x^2-4x+1 adalah : "<<hasil<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Terima Kasih"<<endl;
+}
+
+
+/********Fungsi Pembagian********/
+pembagian()
+{
+float bil1,bil2,hasil;
+cout<<" -ORYZA HABIBIE RAHMAN-"<<endl;
+cout<<" OPERASI PEMBAGIAN"<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Input Bilangan A : ";cin>>bil1;
+cout<<" Input Bilangan B : ";cin>>bil2;
+
+hasil=bil1/bil2;
+
+cout<<" Hasil Pembagian adalah : "<<hasil<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Terima Kasih"<<endl;
+}
+
+
+/********Fungsi Pangkat********/
+pangkat()
+{
+float bil, hasil;
+cout<<" -ORYZA HABIBIE RAHMAN-"<<endl;
+cout<<" OPERASI PANGKAT"<<endl;
+cout<<"--------------------"<<endl;
+cout<<"Input Bilangan : ";cin>>bil;
+
+hasil=bil*bil;
+
+cout<<" Hasil Pangkat adalah : "<<hasil<<endl;
+cout<<"--------------------"<<endl;
+cout<<"Terima Kasih"<<endl;
+}
+
+
+/********Fungsi Keluar********/
+keluar()
+{
+cout<<"--------------------"<<endl;
+cout<<" Terima Kasih Telah Menggunakan Kalkulator"<<endl;
+cout<<"--------------------"<<endl;
+}
+
+/********Program Utama********/
+main()
+{
+int pilih;
+char ulang;
+atas:
+cout<<" -ORYZA HABIBIE RAHMAN-"<<endl;
+cout<<" Kalkulator Sederhana "<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Pilihlah Operator"<<endl;
+cout<<"--------------------"<<endl;
+cout<<" 1.Penjumlahan"<<endl;
+cout<<" 2.Pengurangan"<<endl;
+cout<<" 3.Pembagian"<<endl;
+cout<<" 4.Pangkat"<<endl;
+cout<<" 5.Fungsi"<<endl;
+cout<<" 6.Keluar"<<endl;
+cout<<"--------------------"<<endl;
+cout<<" Masukan Pilihan Anda : "; cin>>pilih;
+cout<<"--------------------"<<endl;
+switch (pilih)
+{
+case 1 : penjumlahan();break;
+case 2 : pengurangan();break;
+case 3 : pembagian();break;
+case 4 : pangkat();break;
+case 5 : fungsi();break;
+case 6 : keluar();break;
+}
+cout<<"--------------------"<<endl;
+cout<<"Ingin Menghitung Lagi [Y/T] : ";cin>>ulang;
+if (ulang == 'Y' || ulang == 'y')
+goto atas;
+getch();
+}
